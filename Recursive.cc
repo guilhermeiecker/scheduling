@@ -107,7 +107,7 @@ vector<uint64_t> Recursive::get_fset()
 
 void Recursive::print_fset()
 {
-	cout << "Printing fset for Algorithm 4..." << endl;
+	cout << "Printing feasible sets..." << endl;
 	for (vector<uint64_t>::iterator i = fset.begin(); i != fset.end(); ++i)
 		cout << *i << " ";
 	cout << endl;
