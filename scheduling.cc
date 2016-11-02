@@ -1,9 +1,3 @@
-/*
- *	./scheduling
- *
- *
- */
-
 #include <glpk.h>
 #include <stdio.h>
 #include <cstring>
@@ -12,6 +6,8 @@
 #include "Network.h"
 #include "Recursive.h"
 
+#define SIZE 10000000
+
 using namespace std;
 
 int main(int argc, char** argv)
@@ -19,40 +15,27 @@ int main(int argc, char** argv)
 	setbuf(stdout,NULL);
 	uint64_t n = atoi(argv[1]);
 	double area = (double)atof(argv[2]);
-	//double tpower = (double)atof(argv[3]);
 	double tpower = 300.0;
 
-	//srand((int)(area*100));
-
 	Network* network = new Network(n, area, tpower);
-	uint64_t m = network->get_links().size();	// # of auxiliary variables (rows)
-	cout << "m=" << m << endl;
 	Recursive* recursive = new Recursive(network);
 	recursive->find_fset(0);
 	vector<uint64_t> sets = recursive->get_fset();
-	//uint64_t* sets = &(fset[0]);	
+	
+	uint64_t m = network->get_links().size();	// # of auxiliary variables (rows)
 	uint64_t f = recursive->get_fset().size();	// # of structural variables	(collumns)
-	cout  << "f=" << f << endl;
-	cout  << "teste" << endl;
-	//delete recursive;
-	//delete network;
-
-	cout << "got here 0";
 	uint64_t a = f * m;				// # of constraints' coefficients
-	cout << "got here 1";
+	
 	double y[f];				// structural vars
 	double z;				// object function
-	cout<<"got here2";
-
 	int ia[1 + a], ja[1 + a];
 	double ar[1 + a], aux[f][m];
+
 	memset(aux, 0, sizeof(aux[0][0]) * m * f);
 	fill(ar, ar + 1 + a, 0);
-	cout << "got here 3";
  
 	cout << "Network generated with n=" << n << " nodes and m=" << m << " links." << endl;
 	cout << "The enumeration algorithm found f=" << f << " feasible sets." << endl;
-	//recursive->print_fset();
 	
 	glp_prob* lp;				// glpk program instance
 	lp = glp_create_prob();			// initiates lp problem
@@ -88,17 +71,6 @@ int main(int argc, char** argv)
 		} while(q > 0);
 	}
 
-	/*
-	cout << "Decoded array..." << endl;
-	for(int i = 0; i < f; i++)
-	{
-		for(int j = 0; j < m; j++)
-			cout << aux[i][j] << "\t";
-		cout << endl;
-	}
-	cout << endl;
-	*/
-
 	for(uint64_t j = 0; j < m; j++)
 		for(uint64_t i = 0; i < f; i++)
         		ar[j * f + i + 1] = aux[i][j];
@@ -107,7 +79,6 @@ int main(int argc, char** argv)
         {
                 ia[i + 1] = i / f + 1;
                 ja[i + 1] = i % f + 1;
-                //cout << "ia[" << i + 1 << "]=" << ia[i + 1] << ", ja[" << i + 1 << "]=" << ja[i + 1] << ", aux[" << i + 1 << "]=" << ar[i + 1] << endl;
         }
 	
 	glp_load_matrix(lp, a, ia, ja, ar);
@@ -119,13 +90,6 @@ int main(int argc, char** argv)
 
 	
 	cout << "z=" << z << endl;
-	/*
-	for(int i = 0; i < f; i++)
-	{
-		cout << "y" << sets[i] << "=" << y[i] << endl;
-	}
-	*/
-
 	for (uint64_t i = 0; i < f; i++)
 	{
 		if((y[i] > 0)&&(y[i] < 1))
