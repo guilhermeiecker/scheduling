@@ -18,34 +18,42 @@ int main(int argc, char** argv)
 {
 	setbuf(stdout,NULL);
 
+	printf("debug point 1: netwotk and enumeration algorithm settings\n");	
 	uint64_t n = atoi(argv[1]);
 	double area = (double)atof(argv[2]);
 	double tpower = 300.0;
-	srand((int)area);
+	//srand((int)area);
 
+	printf("debug point 2: generates network and feasible sets\n");	
 	Network* network = new Network(n, area, tpower);
 	Recursive* recursive = new Recursive(network);
 	recursive->find_fset(0);
 
+	printf("debug point 3: initializes m, f and a\n");
 	vector<uint64_t> sets = recursive->get_fset();
 	uint64_t m = network->get_links().size();	// # of auxiliary variables (rows)
 	uint64_t f = recursive->get_fset().size();	// # of structural variables	(collumns)
 	uint64_t a = f * m;				// # of constraints' coefficients
 	delete network;
 	delete recursive;
+	printf("f=%ld, m=%ld\n", f, m);
 
+	printf("debug point 4: initializes glpk data structures\n");	
 	double z;				// object function
 	int* ia = new int[1 + a]; 
 	int* ja = new int[1 + a];
 	double* ar = new double[1 + a];
 
+	printf("debug point 5: zeroes data structures\n");	
 	fill(ar, ar + 1 + a, 0);
  
+	printf("debug point 6: initializes glpk problem\n");	
 	glp_prob* lp;				// glpk program instance
 	lp = glp_create_prob();			// initiates lp problem
 	glp_set_prob_name(lp, "scheduling");	// labels lp problem
 	glp_set_obj_dir(lp, GLP_MIN);		// set lp objective direction (max or min)
 
+	printf("debug point 7: adds rows (constraints)\n");	
 	glp_add_rows(lp, m);			// auxiliary variables (constraints)
 	for(uint64_t i = 0; i < m; i++)
 	{
@@ -53,6 +61,7 @@ int main(int argc, char** argv)
 		glp_set_row_bnds(lp, i + 1, GLP_FX, 1.0, 1.0);
 	}
 
+	printf("debug point 8: adds collumns (variables)\n");	
 	glp_add_cols(lp, f);			// structural variables
 	for(uint64_t i = 0; i < f; i++)
 	{
@@ -61,6 +70,7 @@ int main(int argc, char** argv)
 		glp_set_obj_coef(lp, i + 1, 1.0);
 	}
 
+	printf("debug point 9: decodes feasible sets\n");	
 	uint64_t p, q, r, i;
 	for(uint64_t j = 0; j < f; j++)
 	{
@@ -75,15 +85,18 @@ int main(int argc, char** argv)
 		} while(q > 0);
 	}
 
+	printf("debug point 10: creates ar's indices\n");		
 	for(uint64_t i = 0; i < a; i++)
         {
                 ia[i + 1] = i / f + 1;
                 ja[i + 1] = i % f + 1;
         }
 
+	printf("debug point 11: loads ar, solves problem, and deletes data structures\n");		
 	glp_load_matrix(lp, a, ia, ja, ar);
 	glp_simplex(lp, NULL);
 
+	printf("debug point 12: prints the results\n");	
 	double y; // if all the y values are relevant, this must be replaced with a dynamic array of size f
 	z = glp_get_obj_val(lp);
 	printf("z=%lf\n", z);

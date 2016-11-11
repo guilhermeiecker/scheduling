@@ -1,6 +1,6 @@
 CC=g++
 LFLAGS=-lglpk -lm -lgmp
-CFLAGS=-Wall -std=c++11
+CFLAGS=-Wall -std=c++11 -mcmodel=large
 
 OBJ= scheduling.o Recursive.o Network.o Link.o Node.o
 
@@ -23,4 +23,8 @@ Node.o: Node.cc
 	$(CC) $(CFLAGS) -c Node.cc
 
 clean:
+	rm *.o scheduling 
+	make
+
+dist-clean:
 	rm *.o scheduling
