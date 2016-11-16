@@ -1,14 +1,14 @@
 CC=g++
 LFLAGS=-lglpk -lm -lgmp
-CFLAGS=-Wall -std=c++11 -mcmodel=large
-
+CFLAGS=$(INCTCL) -g -std=c++11 -Wextra -Wunused -Wall -mcmodel=large
+INCTCL=-I/usr/include
 OBJ= scheduling.o Recursive.o Network.o Link.o Node.o
 
 scheduling: $(OBJ)
 	$(CC) $(LFLAGS) $(OBJ) -o scheduling
 
 scheduling.o: scheduling.cc
-	$(CC) $(CFLAGS) $(LFLAGS) -c scheduling.cc
+	$(CC) -c $(CFLAGS) scheduling.cc
 
 Recursive.o: Recursive.cc
 	$(CC) $(CFLAGS) -c Recursive.cc
