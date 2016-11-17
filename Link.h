@@ -4,9 +4,9 @@
 #include <stdint.h>		// uint64_t
 #include <math.h>
 #include "Node.h"
-#include <boost/multiprecision/cpp_int.hpp>
+//#include <boost/multiprecision/cpp_int.hpp>
 
-using namespace boost::multiprecision;
+//using namespace boost::multiprecision;
 using namespace std;
 
 class Link {

@@ -1,8 +1,10 @@
 CC=g++
-LFLAGS=-lglpk -lm -lgmp
 CFLAGS=$(INCTCL) -g -std=c++11 -Wextra -Wunused -Wall -mcmodel=large
 INCTCL=-I/usr/include
 OBJ= scheduling.o Recursive.o Network.o Link.o Node.o
+STDDEF= -D__GNUG__
+SRCS= scheduling.cc
+LFLAGS= -lm -l glpk -l gmp -l z
 
 scheduling: $(OBJ)
 	$(CC) $(LFLAGS) $(OBJ) -o scheduling
@@ -21,6 +23,9 @@ Link.o: Link.cc
 
 Node.o: Node.cc
 	$(CC) $(CFLAGS) -c Node.cc
+
+depend:
+	makedepend $(STDDEF) -- $(CFLAGS) -- $(SRCS)
 
 clean:
 	rm *.o scheduling 

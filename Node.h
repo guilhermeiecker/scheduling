@@ -3,9 +3,9 @@
 #include <stdint.h>
 #include <random>
 #include <time.h>       /* time */
-#include <boost/multiprecision/cpp_int.hpp>
+//#include <boost/multiprecision/cpp_int.hpp>
 
-using namespace boost::multiprecision;
+//using namespace boost::multiprecision;
 
 class Node
 {

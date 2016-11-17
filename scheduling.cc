@@ -3,7 +3,7 @@
 #include <stdint.h>	// uint64_t
 #include <vector>	// vector
 #include <algorithm>	// fill
-#include <boost/multiprecision/cpp_int.hpp>
+//#include <boost/multiprecision/cpp_int.hpp>
 
 #include "Network.h"
 #include "Recursive.h"
@@ -12,7 +12,7 @@
 #define F 100000
 
 using namespace std;
-using namespace boost::multiprecision;
+//using namespace boost::multiprecision;
 
 int main(int argc, char** argv)
 {
