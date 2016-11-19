@@ -3,7 +3,6 @@
 #include <stdint.h>	// uint64_t
 #include <vector>	// vector
 #include <algorithm>	// fill
-//#include <boost/multiprecision/cpp_int.hpp>
 
 #include "Network.h"
 #include "Recursive.h"
@@ -12,22 +11,23 @@
 #define F 100000
 
 using namespace std;
-//using namespace boost::multiprecision;
 
 int main(int argc, char** argv)
 {
-	setbuf(stdout,NULL);
+	//setbuf(stdout,NULL);
 
 	uint64_t n = atoi(argv[1]);
 	double area = (double)atof(argv[2]);
+	uint64_t run = atoi(argv[3]);
 	double tpower = 300.0;
-	srand((int)area);
+	//srand(time(NULL));
+	srand(run);
 
 	Network* network = new Network(n, area, tpower);
 	uint64_t m = network->get_links().size();	// # of auxiliary variables (rows)
-	if (m > 64)
+	if ((m > 64)||(m == 0))
 	{
-		printf("%lf\t%ld\t?\t?\t?", area, m);
+		//printf("%ld\t%lf\t%ld\t%ld\t?\t?\t?\n", n, area, run, m);
 		return 0;
 	}
 	
@@ -39,7 +39,8 @@ int main(int argc, char** argv)
 	delete recursive;
 	if (f > 9765625)	// Para RAM=20GB => f≃9.765.625; para RAM=3GB =>f≃1.500.000 
 	{
-		printf("%lf\t%ld\t%ld\t?\t?", area, m, f);
+		cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t?\t?" << endl;
+		//printf("%ld\t%lf\t%ld\t%ld\t%ld\t?\t?\n", n, area, run, m, f);
 		return 0;
 	}
 	
@@ -109,7 +110,8 @@ int main(int argc, char** argv)
 			break;
 		}
 	}
-	printf("%lf\t%ld\t%ld\t%d\t%lf", area, m, f, mc, z);
+	cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t" << mc << "\t" << z << endl;
+	//printf("%ld\t%lf\t%ld\t%ld\t%ld\t%d\t%lf\n", n, area, run, m, f, mc, z);
 	
 	glp_delete_prob(lp);
 
