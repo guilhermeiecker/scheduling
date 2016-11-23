@@ -85,7 +85,7 @@ int main(int argc, char** argv)
 
 	string output("n" + to_string(n) + ".txt"); // set file name at execution time
 	ofstream result(output);
-	result << "A\tm_avg\tm_std\tf_avg\tf_std\tz_avg\tz_std\tmc" << endl;
+	result << "A\tm_avg\tm_std\tf_avg\tf_std\tz_avg\tz_std\tmc\tsamples" << endl;
 	for(int i  = 0; i < SIZE; i++)
 	{
 		if (samples[i] == 0)
