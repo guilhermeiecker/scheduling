@@ -18,27 +18,31 @@ int main(int argc, char** argv)
 
 	Network* network;
 	Recursive* recursive;
-	uint64_t m, f, count;
+	uint64_t m, f;
 	
-	count = 0;
-	do
+	m = f = 0;
+	srand(run);
+	network = new Network(n, area, tpower);
+	m = network->get_links().size();
+	if(m == 0)
 	{
-		m = f = 0;
-		if(count==5)
-		{
-			return 0;
-		}
-		srand(run + count*(time(NULL)));
-		network = new Network(n, area, tpower);
-		m = network->get_links().size();
-		if((m>0)&&(m<65))
-		{	
-			recursive = new Recursive(network);
-			recursive->find_fset(0);
-			f = recursive->get_fset().size();
-		}
-		count++;
-	} while((f==0)||(f>9765625));
+		cout << n << "\t" << area << "\t" << run << "\t0\t0\t0\t0.0\t1\t0\t0" << endl;
+		return 0;
+	}
+	if(m > 64)
+	{
+		cout << n << "\t" << area << "\t" << run << "\t0\t0\t0\t0.0\t0\t1\t0" << endl;
+		return 0;
+	}
+
+	recursive = new Recursive(network);
+	recursive->find_fset(0);
+	f = recursive->get_fset().size();
+	if(f > 9765625)
+	{
+		cout << n << "\t" << area << "\t" << run << "\t0\t0\t0\t0.0\t0\t0\t1" << endl;
+		return 0;
+	}
 
 	vector<uint64_t> sets = recursive->get_fset();
 	delete recursive;
@@ -96,8 +100,8 @@ int main(int argc, char** argv)
 	glp_load_matrix(lp, a, ia, ja, ar);
 	glp_simplex(lp, NULL);
 
-	int mc;	// flag1: solution found; flag2: MC==T
-	double y; // if all the y values are relevant, this must be replaced with a dynamic array of size f
+	int mc;
+	double y;
 	
 	mc = 0;
 	z = glp_get_obj_val(lp);
@@ -110,7 +114,7 @@ int main(int argc, char** argv)
 			break;
 		}
 	}
-	cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t" << mc << "\t" << z << endl;
+	cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t" << mc << "\t" << z << "\t0\t0\t0" << endl;
 	
 	glp_delete_prob(lp);
 
