@@ -2,6 +2,11 @@
 
 void Recursive::find_fset(uint64_t x)
 {
+	if (fset.size() > 9765625)
+	{
+		fset.clear();
+		return;
+	}
 	it = x;
 	uint64_t limit;
 	if (x == 0)

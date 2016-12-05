@@ -38,7 +38,7 @@ int main(int argc, char** argv)
 	recursive = new Recursive(network);
 	recursive->find_fset(0);
 	f = recursive->get_fset().size();
-	if(f > 9765625)
+	if(f == 0)
 	{
 		cout << n << "\t" << area << "\t" << run << "\t0\t0\t0\t0.0\t0\t0\t1" << endl;
 		return 0;

@@ -36,7 +36,7 @@ int main(int argc, char** argv)
 	ifstream avg(input);
 	while (avg >> n >> a >> r >> m >> f >> mc >> z >> dropm_min >> dropm_max >> dropf_max)
 	{
-		if((dropm_min==0)&&(dropm_max==0)&&(dropf_max==0))
+		if((dropm_min == 0)&&(dropm_max == 0)&&(dropf_max == 0))
 		{
 			samples[(int)((a - AMIN)/STEP)]++;
 			m_sum[(int)((a - AMIN)/STEP)] += m;
@@ -72,7 +72,7 @@ int main(int argc, char** argv)
 	fill(f_sum, f_sum + SIZE, 0.0);
 	fill(z_sum, z_sum + SIZE, 0.0);
 	ifstream std(input);
-	while (std >> n >> a >> r >> m >> f >> mc >> z)
+	while (std >> n >> a >> r >> m >> f >> mc >> z >> dropm_min >> dropm_max >> dropf_max)
 	{
 		m_sum[(int)((a - AMIN)/STEP)] += pow((m - m_avg[(int)((a - AMIN)/STEP)]),2);
 		f_sum[(int)((a - AMIN)/STEP)] += pow((f - f_avg[(int)((a - AMIN)/STEP)]),2);
