@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=$(INCTCL) -g -std=c++11 -Wextra -Wunused -Wall -mcmodel=large
+CFLAGS=$(INCTCL) -g -lglpk -std=c++11 -Wextra -Wunused -Wall -mcmodel=large
 INCTCL=-I/usr/include
 OBJ= scheduling.o Recursive.o Network.o Link.o Node.o
 STDDEF= -D__GNUG__

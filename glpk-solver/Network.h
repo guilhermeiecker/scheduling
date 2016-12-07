@@ -33,6 +33,7 @@ public:
 
 	Network(uint64_t _n = 100, double _a = 3000.0, double _p = 300.0) : num_nodes(_n), area_side(_a), tpower(_p)
 	{
+		cout << "max_range=" << max_range << endl;
 		set_nodes();
 		set_links();
 	}

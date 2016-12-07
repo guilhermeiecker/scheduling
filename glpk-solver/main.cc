@@ -22,21 +22,25 @@ int main(int argc, char** argv)
 	Enumerator* enumerator;
 	uint64_t m, f;
 	
+	cout << "generates network..." << endl;
 	m = f = 0;
 	srand(run);
 	network = new Network(n, area, tpower);
 	m = network->get_links().size();
+	cout << "m=" << m << endl;
 	if(m == 0)
 	{
 		cout << n << "\t" << area << "\t" << run << "\t0\t0\t0\t0.0\t1\t0\t0" << endl;
 		return 0;
 	}
-	if(m > 64)
+	if(m > 128)
 	{
 		cout << n << "\t" << area << "\t" << run << "\t0\t0\t0\t0.0\t0\t1\t0" << endl;
 		return 0;
 	}
 
+	cout << "finds feasible sets..." << endl;
+    	cin.get();
 	enumerator = new Enumerator(network);
 	enumerator->find_fset(0);
 	f = enumerator->get_fset().size();
@@ -47,6 +51,7 @@ int main(int argc, char** argv)
 		return 0;
 	}
 
+	cout << "sets variables..." << endl;
 	vector<uint128_t> sets = enumerator->get_fset();
 	delete enumerator;
 	delete network;
@@ -59,6 +64,7 @@ int main(int argc, char** argv)
 
 	fill(ar, ar + 1 + a, 0);
  
+	cout << "generates lp problem..." << endl;
 	glp_prob* lp;				// glpk program instance
 	lp = glp_create_prob();			// initiates lp problem
 	glp_set_prob_name(lp, "scheduling");	// labels lp problem
@@ -100,6 +106,7 @@ int main(int argc, char** argv)
 		ja[i + 1] = i % f + 1;
 	}
 
+	cout << "solves lp problem..." << endl;
 	glp_load_matrix(lp, a, ia, ja, ar);
 	glp_simplex(lp, NULL);
 

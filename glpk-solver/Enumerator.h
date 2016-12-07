@@ -6,13 +6,17 @@
 
 #pragma once
 
+#include <iostream>
 #include <stdint.h>
+#include <math.h>
 #include <vector>
 #include "Node.h"
 #include "Link.h"
 #include "Network.h"
 
 typedef unsigned __int128 uint128_t;
+
+using namespace std;
 
 class Enumerator
 {
@@ -40,31 +44,29 @@ public:
 };
 
 /// log2 bitwise
-uint128_t log2(uint128_t x)
+uint128_t newlog2(uint128_t x)
 {
 	uint128_t count = 0;
 	while((x & 1) == 0)
 	{
-		x = x >> 1;
+		x = x / 2;
 		count++;
 	} 
 	return count;
 }
 
 /// pow bitwise
-uint128_t pow(uint128_t x)
+uint128_t newpow(uint128_t x)
 {
 	uint128_t res = 1;
-	for(uint128_t i = 0; i < x; i++)
-	{
-		res = res * 2;
-	}
+	res = res << x;
 	return res;
 }
 
 void Enumerator::find_fset(uint128_t x)
 {
-	if (fset.size() > 9765625)
+    	//cin.get();
+	if (fset.size() > 9000000)
 	{
 		fset.clear();
 		return;
@@ -75,16 +77,17 @@ void Enumerator::find_fset(uint128_t x)
 	{
 		limit = m;
 		for (uint64_t i = 0; i < limit; i++)
-			find_fset(x + (uint64_t)pow(2, i));
+			find_fset(x + newpow(i));
 	}
 	else
 	{
-		limit = log2(x & ~(x - 1));  //TODO: log2 não vai funcionar
+		limit = newlog2(x & ~(x - 1));  //TODO: log2 não vai funcionar
 		add_link(limit);
 		if (is_feasible()) {
+			cout << (uint64_t)x << endl; 
 			fset.push_back(x);
 			for (uint128_t i = 0; i < limit; i++)
-				find_fset(x + (uint128_t)pow(i));	//TODO: pow não vai funcionar
+				find_fset(x + newpow(i));	//TODO: pow não vai funcionar
 		}
 		del_link(limit);
 	}
