@@ -66,7 +66,7 @@ uint128_t newpow(uint128_t x)
 void Enumerator::find_fset(uint128_t x)
 {
     	//cin.get();
-	if (fset.size() > 9000000)
+	if (fset.size() > 5000000)
 	{
 		fset.clear();
 		return;
@@ -84,7 +84,7 @@ void Enumerator::find_fset(uint128_t x)
 		limit = newlog2(x & ~(x - 1));  //TODO: log2 não vai funcionar
 		add_link(limit);
 		if (is_feasible()) {
-			cout << (uint64_t)x << endl; 
+			//cout << (uint64_t)x << endl; 
 			fset.push_back(x);
 			for (uint128_t i = 0; i < limit; i++)
 				find_fset(x + newpow(i));	//TODO: pow não vai funcionar
