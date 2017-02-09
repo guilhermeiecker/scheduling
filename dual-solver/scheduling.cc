@@ -92,7 +92,7 @@ int main(int argc, char** argv)
 	for(uint64_t i = 0; i < m; i++)
 	{
 		glp_set_col_name(lp, i + 1, to_string(i).c_str());
-		glp_set_col_bnds(lp, i + 1, GLP_FX, 0.0, 0.0);
+		glp_set_col_bnds(lp, i + 1, GLP_LO, 0.0, 0.0);
 		glp_set_obj_coef(lp, i + 1, 1.0);
 	}
 

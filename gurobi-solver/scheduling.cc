@@ -17,86 +17,23 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	clock_t t, tt;
-	t = clock();
+	// begin: Toy example
+        vector<uint64_t> sets = {1, 2, 4, 8, 16, 9, 18, 5, 10, 20};
+        uint64_t m = 5;
+        uint64_t f = 10;
+        uint64_t a = m * f;
+        // end: Toy example
 
-	uint64_t n = atoi(argv[1]);
-	double area = (double)atof(argv[2]);
-	uint64_t run = atoi(argv[3]);
-	double tpower = 300.0;
+	GRBVar vars[f];
+	GRBLinExpr objective = 0;
+	GRBLinExpr constraints[m];
 
-	Network* network;
-	Enumerator* enumerator;
-	uint64_t m, f;
+	for(int i = 0; i < f; i++)
+	{
+		vars[i] = model.addVar(0.0, 1.0, 0.0, GRB_BINARY, to_string(i).c_str());
+		obj = obj + vars[i];
+	}
 	
-	m = f = 0;
-	srand(run);
-	network = new Network(n, area, tpower);
-	m = network->get_links().size();
-	if(m == 0)
-	{
-		tt = clock();
-		cout << n << "\t" << area << "\t" << run << "\t0\t0\t0\t0.0\t1\t0\t0\t0\t" << fixed << setprecision(6) << ((double)(tt - t))/CLOCKS_PER_SEC << endl;
-		return 0;
-	}
-	if(m > 128)
-	{
-		tt = clock();
-		cout << n << "\t" << area << "\t" << run << "\t0\t0\t0\t0.0\t0\t1\t0\t0\t" << fixed << setprecision(6) << ((double)(tt - t))/CLOCKS_PER_SEC << endl;
-		return 0;
-	}
-
-	enumerator = new Enumerator(network);
-	enumerator->find_fset(0);
-	f = enumerator->get_fset().size();
-	if(f == 0)
-	{
-		tt = clock();
-		cout << n << "\t" << area << "\t" << run << "\t0\t0\t0\t0.0\t0\t0\t1\t0\t" << fixed << setprecision(6) << ((double)(tt - t))/CLOCKS_PER_SEC << endl;
-		return 0;
-	}
-
-	vector<uint128_t> sets = enumerator->get_fset();
-	delete enumerator;
-	delete network;
-
-	uint64_t a = f * m;				// # of constraints' coefficients
-
-	if (a > 500000000)
-	{
-		tt = clock();
-		cout << n << "\t" << area << "\t" << run << m << "\t" << f << "\t0\t0.0\t0\t0\t0\t1\t" << fixed << setprecision(6) << ((double)(tt - t))/CLOCKS_PER_SEC << endl;
-		return 0;
-	}
-
-	double z;
-	int* ia = new int[1 + a]; 
-	int* ja = new int[1 + a];
-	double* ar = new double[1 + a];
-
-	fill(ar, ar + 1 + a, 0);
- 
-	glp_prob* lp;				// glpk program instance
-	lp = glp_create_prob();			// initiates lp problem
-	glp_set_prob_name(lp, "scheduling");	// labels lp problem
-	glp_set_obj_dir(lp, GLP_MIN);		// set lp objective direction (max or min)
-	glp_term_out(GLP_OFF);	// disables glpk terminal output
-	
-	glp_add_rows(lp, m);			// auxiliary variables (constraints)
-	for(uint64_t i = 0; i < m; i++)
-	{
-		glp_set_row_name(lp, i + 1, to_string(i).c_str());
-		glp_set_row_bnds(lp, i + 1, GLP_FX, 1.0, 1.0);
-	}
-
-	glp_add_cols(lp, f);			// structural variables
-	for(uint64_t i = 0; i < f; i++)
-	{
-		glp_set_col_name(lp, i + 1, to_string(i).c_str());
-		glp_set_col_bnds(lp, i + 1, GLP_LO, 0.0, 0.0);
-		glp_set_obj_coef(lp, i + 1, 1.0);
-	}
-
 	uint64_t p, q, r, i;
 	for(uint64_t j = 0; j < f; j++)
 	{
@@ -105,40 +42,12 @@ int main(int argc, char** argv)
 		do {
 			q = p / 2;
 			r = p % 2;
-			ar[i * f + j + 1] = (r == 1) ? 1 : 0;
+			if (r == 1)
+				constraints[i] = constraints[i] + vars[j];
 			p = q;
 			i++;
 		} while(q > 0);
 	}
-
-	for(uint64_t i = 0; i < a; i++)
-	{
-		ia[i + 1] = i / f + 1;
-		ja[i + 1] = i % f + 1;
-	}
-
-	glp_load_matrix(lp, a, ia, ja, ar);
-	glp_simplex(lp, NULL);
-
-	int mc;
-	double y;
-	
-	mc = 0;
-	z = glp_get_obj_val(lp);
-	for (uint64_t i = 0; i < f; i++)
-	{
-		y = glp_get_col_prim(lp, i + 1);
-		if((y > 0) && (y < 1))
-		{
-			mc = 1;
-			break;
-		}
-	}
-
-	tt = clock();
-	cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t" << mc << "\t" << z << "\t0\t0\t0\t0\t" << fixed << setprecision(6) << ((double)(tt - t))/CLOCKS_PER_SEC << endl;
-	
-	glp_delete_prob(lp);
 
 	return 0;
 }
