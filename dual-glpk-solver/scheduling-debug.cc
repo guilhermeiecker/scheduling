@@ -13,16 +13,29 @@ typedef unsigned __int128 uint128_t;
 
 using namespace std;
 
+// input format:  n | area | run
+// output format: n | area | run | m | f | mc | z | t1 | t2 | drop
 int main(int argc, char** argv)
 {
 	// begin: Toy example
+	/*
 	vector<uint64_t> sets = {1, 2, 4, 8, 16, 9, 18, 5, 10, 20};
 	uint64_t m = 5;
 	uint64_t f = 10;
 	uint64_t a = m * f;
+	*/
 	// end: Toy example
 
-	/*
+	if(argc!=4)
+	{
+		cout << "Invalid arguments" << endl;
+		cout << "USAGE: ./scheduling <NUMBER_OF_NODES> <AREA> <ROUND_NUMBER>" << endl;
+		return 0;
+	}
+	clock_t t, tt, ttt;
+
+	t = clock();
+	
 	uint64_t n = atoi(argv[1]);
 	double area = (double)atof(argv[2]);
 	uint64_t run = atoi(argv[3]);
@@ -38,21 +51,25 @@ int main(int argc, char** argv)
 	m = network->get_links().size();
 	if(m == 0)
 	{
-		cout << "ERROR: m=0";
+		// drop = 1: m = 0
+		cout << n << "\t" << area << "\t" << run << "\t0\t0\t0\t0\t0\t0\t1" << endl;
 		return 0;
 	}
 	if(m > 128)
 	{
-		cout << "ERROR: m>128";
+		// drop = 2: m > 128
+                cout << n << "\t" << area << "\t" << run << "\t" << m << "\t0\t0\t0\t0\t0\t2" << endl;
 		return 0;
 	}
 
 	enumerator = new Enumerator(network);
 	enumerator->find_fset(0);
+	tt = clock();
 	f = enumerator->get_fset().size();
 	if(f == 0)
 	{
-		cout << "ERROR: f reached RAM limitation";
+		// drop = 3: f = 0 
+                cout << n << "\t" << area << "\t" << run << "\t" << m << "\t0\t0\t0\t" << ((double)(tt - t))/CLOCKS_PER_SEC << "\t0\t3" << endl;
 		return 0;
 	}
 
@@ -64,10 +81,10 @@ int main(int argc, char** argv)
 
 	if (a > 500000000)
 	{
-		cout << "ERROR: glpk limitation reached";
+		// drop = 4: a > 500M
+                cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t0\t0\t" << ((double)(tt - t))/CLOCKS_PER_SEC << "\t0\t4" << endl;
 		return 0;
 	}
-	*/
 
 	double z, y;
 	int* ia = new int[1 + a]; 
@@ -80,19 +97,20 @@ int main(int argc, char** argv)
 	lp = glp_create_prob();			// initiates lp problem
 	glp_set_prob_name(lp, "scheduling");	// labels lp problem
 	glp_set_obj_dir(lp, GLP_MAX);		// set lp objective direction (max or min)
-	
+        //glp_term_out(GLP_OFF);        // disables glpk terminal output
+
 	glp_add_rows(lp, f);			// auxiliary variables (constraints)
 	for(uint64_t i = 0; i < f; i++)
 	{
 		glp_set_row_name(lp, i + 1, to_string(i).c_str());
-		glp_set_row_bnds(lp, i + 1, GLP_UP, 0.0, 1.0);
+		glp_set_row_bnds(lp, i + 1, GLP_UP, 1.0, 1.0);
 	}
 
 	glp_add_cols(lp, m);			// structural variables
 	for(uint64_t i = 0; i < m; i++)
 	{
 		glp_set_col_name(lp, i + 1, to_string(i).c_str());
-		glp_set_col_bnds(lp, i + 1, GLP_LO, 0.0, 0.0);
+		glp_set_col_bnds(lp, i + 1, GLP_FR, 0.0, 0.0);
 		glp_set_obj_coef(lp, i + 1, 1.0);
 	}
 
@@ -112,30 +130,26 @@ int main(int argc, char** argv)
 
 	for(uint64_t i = 0; i < a; i++)
 	{
-		ja[i + 1] = i / f + 1;
-		ia[i + 1] = i % f + 1;
+		ia[i + 1] = i / m + 1;
+		ja[i + 1] = i % m + 1;
 	}
-
 	glp_load_matrix(lp, a, ia, ja, ar);
 	glp_simplex(lp, NULL);
+	ttt = clock();
 
-	z = glp_get_obj_val(lp);
-	cout << "\nz=" << z << endl;
+	int mc = 0;
+        z = glp_get_obj_val(lp);
+        for (uint64_t i = 0; i < m; i++)
+        {
+                y = glp_get_col_prim(lp, i + 1);
+                if((y > 0) && (y < 1))
+                {
+                        mc = 1;
+                        break;
+                }
+        }
 
-	cout << "primal variables:" << endl;
-	for (uint64_t i = 0; i < m; i++)
-	{
-		y = glp_get_col_prim(lp, i + 1);
-		cout << y << "\t";
-	}
-
-	cout << "\ndual variables:" << endl;
-	for (uint64_t i = 0; i < m; i++)
-	{
-		y = glp_get_col_dual(lp, i + 1);
-		cout << y << "\t";
-	}
-	cout << endl;
+        cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t" << mc << "\t" << fixed << setprecision(6) << z << "\t" << ((double)(tt - t))/CLOCKS_PER_SEC << "\t" << ((double)(ttt - tt))/CLOCKS_PER_SEC << "\t0" << endl;
 
 	glp_delete_prob(lp);
 

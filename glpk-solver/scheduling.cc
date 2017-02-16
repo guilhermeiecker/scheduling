@@ -80,7 +80,7 @@ int main(int argc, char** argv)
 	lp = glp_create_prob();			// initiates lp problem
 	glp_set_prob_name(lp, "scheduling");	// labels lp problem
 	glp_set_obj_dir(lp, GLP_MIN);		// set lp objective direction (max or min)
-	glp_term_out(GLP_OFF);	// disables glpk terminal output
+	//glp_term_out(GLP_OFF);	// disables glpk terminal output
 	
 	glp_add_rows(lp, m);			// auxiliary variables (constraints)
 	for(uint64_t i = 0; i < m; i++)
