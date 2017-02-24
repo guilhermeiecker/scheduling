@@ -74,7 +74,7 @@ int main(int argc, char** argv)
 		GRBModel model = GRBModel(env);
 		
 		// comment the following line to show solution process information
-		model.getEnv().set(GRB_IntParam_OutputFlag, 0);
+		//model.getEnv().set(GRB_IntParam_OutputFlag, 0);
 
 		GRBVar variables[f];
 		GRBLinExpr objective = 0;

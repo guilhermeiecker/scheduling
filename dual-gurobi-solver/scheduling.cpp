@@ -123,12 +123,12 @@ int main(int argc, char** argv)
 	{
 		cout << "Error code = " << e.getErrorCode() << endl;
     		//cout << e.getMessage() << endl;
-    		return 0;
+    	//	return 0;
   	}
 	catch(...) 
 	{
     		cout << "Exception during optimization" << endl;
-		return 0;
+	//	return 0;
   	}
 
 	tt = clock();

@@ -51,13 +51,11 @@ int main(int argc, char** argv)
 	m = network->get_links().size();
 	if(m == 0)
 	{
-		// drop = 1: m = 0
 		cout << n << "\t" << area << "\t" << run << "\t0\t0\t0\t0\t0\t0\t1" << endl;
 		return 0;
 	}
 	if(m > 128)
 	{
-		// drop = 2: m > 128
                 cout << n << "\t" << area << "\t" << run << "\t" << m << "\t0\t0\t0\t0\t0\t2" << endl;
 		return 0;
 	}
@@ -68,7 +66,6 @@ int main(int argc, char** argv)
 	f = enumerator->get_fset().size();
 	if(f == 0)
 	{
-		// drop = 3: f = 0 
                 cout << n << "\t" << area << "\t" << run << "\t" << m << "\t0\t0\t0\t" << ((double)(tt - t))/CLOCKS_PER_SEC << "\t0\t3" << endl;
 		return 0;
 	}
@@ -80,7 +77,6 @@ int main(int argc, char** argv)
 
 	if (a > 500000000)
 	{
-		// drop = 4: a > 500M
                 cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t0\t0\t" << ((double)(tt - t))/CLOCKS_PER_SEC << "\t0\t4" << endl;
 		return 0;
 	}
@@ -133,6 +129,7 @@ int main(int argc, char** argv)
 		ia[i + 1] = i / m + 1;
 		ja[i + 1] = i % m + 1;
 	}
+
 	glp_load_matrix(lp, a, ia, ja, ar);
 	glp_simplex(lp, NULL);
 	ttt = clock();
@@ -148,6 +145,23 @@ int main(int argc, char** argv)
                         break;
                 }
         }
+
+	cout << "\nz=" << z << endl;
+
+        cout << "primal variables:" << endl;
+        for (uint64_t i = 0; i < f; i++)
+        {
+                y = glp_get_col_prim(lp, i + 1);
+                cout << y << "\t";
+        }
+
+        cout << "\ndual variables:" << endl;
+        for (uint64_t i = 0; i < f; i++)
+        {
+                y = glp_get_col_dual(lp, i + 1);
+                cout << y << "\t";
+        }
+        cout << endl;
 
         cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t" << mc << "\t" << fixed << setprecision(6) << z << "\t" << ((double)(tt - t))/CLOCKS_PER_SEC << "\t" << ((double)(ttt - tt))/CLOCKS_PER_SEC << "\t0" << endl;
 
