@@ -17,15 +17,6 @@ using namespace std;
 // output format: n | area | run | m | f | mc | z | t1 | t2 | drop
 int main(int argc, char** argv)
 {
-	// begin: Toy example
-	/*
-	vector<uint64_t> sets = {1, 2, 4, 8, 16, 9, 18, 5, 10, 20};
-	uint64_t m = 5;
-	uint64_t f = 10;
-	uint64_t a = m * f;
-	*/
-	// end: Toy example
-
 	if(argc!=4)
 	{
 		cout << "Invalid arguments" << endl;
@@ -109,8 +100,8 @@ int main(int argc, char** argv)
 		glp_set_obj_coef(lp, i + 1, 1.0);
 	}
 
-	uint64_t i, q, r;
-	uint128_t p;
+	uint64_t i,  r;
+	uint128_t p, q;
 	for(uint64_t j = 0; j < f; j++)
 	{
 		p = sets[j];
@@ -149,19 +140,11 @@ int main(int argc, char** argv)
 	cout << "\nz=" << z << endl;
 
         cout << "primal variables:" << endl;
-        for (uint64_t i = 0; i < f; i++)
+        for (uint64_t i = 0; i < m; i++)
         {
                 y = glp_get_col_prim(lp, i + 1);
                 cout << y << "\t";
         }
-
-        cout << "\ndual variables:" << endl;
-        for (uint64_t i = 0; i < f; i++)
-        {
-                y = glp_get_col_dual(lp, i + 1);
-                cout << y << "\t";
-        }
-        cout << endl;
 
         cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t" << mc << "\t" << fixed << setprecision(6) << z << "\t" << ((double)(tt - t))/CLOCKS_PER_SEC << "\t" << ((double)(ttt - tt))/CLOCKS_PER_SEC << "\t0" << endl;
 

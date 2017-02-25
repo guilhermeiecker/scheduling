@@ -85,8 +85,9 @@ int main(int argc, char** argv)
 			variables[i] = model.addVar(-GRB_INFINITY, GRB_INFINITY, 1.0, GRB_CONTINUOUS, to_string(i).c_str());
 			objective = objective + variables[i];
 		}
-	
-		uint64_t p, q, r, i;
+
+		uint128_t p, q;	
+		uint64_t r, i;
 		for(uint64_t j = 0; j < f; j++)
 		{
 			p = sets[j];
@@ -102,14 +103,14 @@ int main(int argc, char** argv)
 		}
 	
 		model.setObjective(objective, GRB_MAXIMIZE);
-		for(uint64_t i = 0; i < m; i++)
+		for(uint64_t i = 0; i < f; i++)
 			model.addConstr(constraints[i], GRB_LESS_EQUAL, 1, to_string(i).c_str());
 		model.optimize();
 
 		mc = 0;
 		z = model.get(GRB_DoubleAttr_ObjVal); 
 
-		for (uint64_t i = 0; i < f; i++)
+		for (uint64_t i = 0; i < m; i++)
         	{
 			y = variables[i].get(GRB_DoubleAttr_X);
                 	if((y > 0) && (y < 1))
