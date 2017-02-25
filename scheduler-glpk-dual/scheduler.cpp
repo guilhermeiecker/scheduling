@@ -86,6 +86,12 @@ int main(int argc, char** argv)
 	uint64_t a = m*f;
 	int r;
 
+	if(a>500000000)
+	{
+                cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t-1\t0\t0" << endl;
+                return 0;
+	}
+
 	int* ia = new int[1 + a];
         int* ja = new int[1 + a];
         double* ar = new double[1 + a];

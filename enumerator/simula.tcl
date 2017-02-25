@@ -1,7 +1,7 @@
 #! /usr/bin/tclsh
 # vim: autoindent shiftwidth=2 softtabstop=2 tabstop=2 :
 
-set VAL_NODES {10}
+set VAL_NODES {20 30 40 50 60 70}
 set INC 1000
 
 foreach NODE $VAL_NODES {
