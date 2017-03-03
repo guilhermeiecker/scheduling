@@ -1,10 +1,8 @@
-#include <glpk.h>	// glpk functions
 #include <stdint.h>	// uint64_t
 #include <algorithm>	// fill
 #include <iomanip>	// setprecision
 #include <iostream>	// cout, endl
 #include <fstream>	// ifstream, read
-
 #include "gurobi_c++.h"
 
 // Change this to point to the network binary files folder
@@ -34,14 +32,12 @@ int main(int argc, char** argv)
 	ifstream infile;
 	infile.open(filename, ios::binary);
 	
-	
 	if(!infile.is_open())
 	{
 		cout << n << "\t" << area << "\t" << run << "\t0\t0\t-1\t0\t0" << endl;
 		return 0;
 	}	
 
-	
 	// Reads the number of links and the number of feasible sets from the first 128 bits (64 bits each)
 	uint64_t m, f;
         infile.read((char*)&m, sizeof(uint64_t));
@@ -67,7 +63,9 @@ int main(int argc, char** argv)
 		
                 GRBVar variables[m];
                 GRBLinExpr objective = 0;
-                GRBLinExpr constraints[f] = {0};
+                GRBLinExpr* constraints = new GRBLinExpr[f];
+
+		fill(constraints, constraints + f, 0);
 		
 		uint64_t i, j;
 		
@@ -116,7 +114,7 @@ int main(int argc, char** argv)
                 }
 		
 		cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t0\t" << mc << "\t" << fixed << setprecision(6) << z << endl;
-	*/
+
         }
 	catch(GRBException e)
         {
