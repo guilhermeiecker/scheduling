@@ -91,6 +91,7 @@ int main(int argc, char** argv)
 		for(uint64_t j = 0; j < f; j++)
 		{
 			p = sets[j];
+			cout << (uint64_t)p << endl;
 			i = 0;
 			do {
 				q = p / 2;
@@ -110,9 +111,17 @@ int main(int argc, char** argv)
 		mc = 0;
 		z = model.get(GRB_DoubleAttr_ObjVal); 
 
+		cout << "Variables:" << endl;
 		for (uint64_t i = 0; i < m; i++)
-        	{
+		{
+                        y = variables[i].get(GRB_DoubleAttr_X);
+                        cout << y << endl;
+		}
+
+		for (uint64_t i = 0; i < m; i++)
+        	{	
 			y = variables[i].get(GRB_DoubleAttr_X);
+			cout << y << endl;
                 	if((y > 0) && (y < 1))
                 	{
                         	mc = 1;
