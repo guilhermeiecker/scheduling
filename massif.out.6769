@@ -1,0 +1,1899 @@
+desc: (none)
+cmd: ./main 90 4000 85
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=40115174780
+mem_heap_B=1557864996
+mem_heap_extra_B=12444
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=70756486947
+mem_heap_B=1642389002
+mem_heap_extra_B=20691806
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=98437868963
+mem_heap_B=1717571266
+mem_heap_extra_B=37901598
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1717571266 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 79842968 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 79842968 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 79842416 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 79842968 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 79842968 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 79842416 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=4
+#-----------
+time=131948811414
+mem_heap_B=1806956562
+mem_heap_extra_B=56513486
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1806956562 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 124535616 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 124535616 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 124535064 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 124535616 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 124535616 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 124535064 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=5
+#-----------
+time=175229024221
+mem_heap_B=1920081650
+mem_heap_extra_B=77810654
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1920081650 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 181098112 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 181098112 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 181097560 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 181098112 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 181098112 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 181097560 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120258 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=6
+#-----------
+time=220472865447
+mem_heap_B=2039736626
+mem_heap_extra_B=102274590
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2039736626 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 240925648 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 240925648 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 240925096 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 240925648 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 240925648 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 240925096 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=7
+#-----------
+time=248373293855
+mem_heap_B=2112774146
+mem_heap_extra_B=116211358
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2112774146 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 277444360 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 277444360 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 277443808 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 277444360 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 277444360 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 277443808 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120258 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=8
+#-----------
+time=286737189113
+mem_heap_B=2210143346
+mem_heap_extra_B=132543022
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2210143346 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 326128984 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 326128984 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 326128432 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 326128984 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 326128984 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 326128432 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120210 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=9
+#-----------
+time=316021515284
+mem_heap_B=2288442146
+mem_heap_extra_B=149366830
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2288442146 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 365278456 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 365278456 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 365277904 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 365278456 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 365278456 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 365277904 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120066 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=10
+#-----------
+time=348274372646
+mem_heap_B=2372043522
+mem_heap_extra_B=164750462
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2372043522 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 407079096 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 407079096 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 407078544 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 407079096 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 407079096 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 407078544 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=11
+#-----------
+time=381336705401
+mem_heap_B=2458246754
+mem_heap_extra_B=181551310
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2458246754 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 450180712 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 450180712 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 450180160 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 450180712 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 450180712 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 450180160 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=12
+#-----------
+time=425367618061
+mem_heap_B=2572129746
+mem_heap_extra_B=202324702
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2572129746 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 507122184 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 507122184 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 507121632 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 507122184 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 507122184 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 507121632 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120210 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=13
+#-----------
+time=463381658372
+mem_heap_B=2668507074
+mem_heap_extra_B=218601502
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2668507074 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 555310824 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 555310824 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 555310272 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 555310824 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 555310824 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 555310272 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120258 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=14
+#-----------
+time=512903551784
+mem_heap_B=2794279554
+mem_heap_extra_B=240100702
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2794279554 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 618197040 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 618197040 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 618196488 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 618197040 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 618197040 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 618196488 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120306 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=15
+#-----------
+time=544518056735
+mem_heap_B=2873434578
+mem_heap_extra_B=252890558
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2873434578 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 657774624 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 657774624 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 657774072 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 657774624 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 657774624 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 657774072 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=16
+#-----------
+time=566787923219
+mem_heap_B=2927985202
+mem_heap_extra_B=261179118
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2927985202 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 685049816 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 685049816 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 685049264 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 685049816 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 685049816 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 685049264 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120402 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=17
+#-----------
+time=599696377240
+mem_heap_B=3010836434
+mem_heap_extra_B=274962894
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3010836434 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 726475504 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 726475504 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 726474952 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 726475504 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 726475504 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 726474952 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120258 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=18
+#-----------
+time=646032596399
+mem_heap_B=3126063986
+mem_heap_extra_B=293152190
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3126063986 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 784089232 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 784089232 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 784088680 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 784089232 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 784089232 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 784088680 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120354 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=19
+#-----------
+time=678595023178
+mem_heap_B=3212193506
+mem_heap_extra_B=310628478
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3212193506 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 827154088 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 827154088 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 827153536 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 827154088 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 827154088 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 827153536 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=20
+#-----------
+time=699984441498
+mem_heap_B=3269896386
+mem_heap_extra_B=323734446
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3269896386 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 856005528 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 856005528 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 856004976 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 856005528 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 856005528 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 856004976 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=21
+#-----------
+time=734197416763
+mem_heap_B=3360574770
+mem_heap_extra_B=341946766
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3360574770 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 901344672 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 901344672 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 901344120 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 901344672 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 901344672 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 901344120 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120258 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=22
+#-----------
+time=782523963725
+mem_heap_B=3487077154
+mem_heap_extra_B=365781774
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3487077154 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 964595888 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 964595888 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 964595336 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 964595888 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 964595888 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 964595336 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120210 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=23
+#-----------
+time=831724153156
+mem_heap_B=3617287442
+mem_heap_extra_B=392013150
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3617287442 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1029701008 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1029701008 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1029700456 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1029701008 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1029701008 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1029700456 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120258 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=24
+#-----------
+time=858112369073
+mem_heap_B=3685508050
+mem_heap_extra_B=404379502
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3685508050 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1063811384 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1063811384 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1063810832 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1063811384 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1063811384 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1063810832 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120114 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=25
+#-----------
+time=884657117252
+mem_heap_B=3754788354
+mem_heap_extra_B=417306014
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3754788354 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1098451464 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1098451464 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1098450912 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1098451464 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1098451464 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1098450912 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120258 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=26
+#-----------
+time=910962629253
+mem_heap_B=3824386738
+mem_heap_extra_B=431566774
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3824386738 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1133250784 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1133250784 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1133250232 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1133250736 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1133250736 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1133250184 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120050 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=27
+#-----------
+time=938810263861
+mem_heap_B=3896507906
+mem_heap_extra_B=444990398
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3896507906 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1169311288 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1169311288 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1169310736 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1169311288 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1169311288 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1169310736 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=28
+#-----------
+time=968285990380
+mem_heap_B=3971183650
+mem_heap_extra_B=457578798
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3971183650 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1206649160 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1206649160 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1206648608 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1206649160 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1206649160 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1206648608 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=29
+#-----------
+time=997640039706
+mem_heap_B=4046667378
+mem_heap_extra_B=471113310
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4046667378 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1244390976 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1244390976 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1244390424 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1244390976 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1244390976 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1244390424 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120258 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=30
+#-----------
+time=1028708896659
+mem_heap_B=4124701106
+mem_heap_extra_B=483887006
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4124701106 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1283407744 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1283407744 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1283407192 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1283407744 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1283407744 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1283407192 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120450 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=31
+#-----------
+time=1061304631623
+mem_heap_B=4204949698
+mem_heap_extra_B=496271214
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4204949698 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1323532088 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1323532088 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1323531536 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1323532088 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1323532088 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1323531536 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120354 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=32
+#-----------
+time=1093677227627
+mem_heap_B=4286172082
+mem_heap_extra_B=509543422
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4286172082 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1364143352 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1364143352 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1364142800 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1364143352 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1364143352 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1364142800 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120210 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=33
+#-----------
+time=1125091961817
+mem_heap_B=4367701698
+mem_heap_extra_B=524407758
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4367701698 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1404908088 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1404908088 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1404907536 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1404908088 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1404908088 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1404907536 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120354 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=34
+#-----------
+time=1157484235336
+mem_heap_B=4451242274
+mem_heap_extra_B=539198638
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4451242274 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1446678472 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1446678472 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1446677920 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1446678472 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1446678472 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1446677920 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=35
+#-----------
+time=1188389266548
+mem_heap_B=4533485682
+mem_heap_extra_B=557263102
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4533485682 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1487800176 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1487800176 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1487799624 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1487800176 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1487800176 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1487799624 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=36
+#-----------
+time=1222176333722
+mem_heap_B=4620188706
+mem_heap_extra_B=572884206
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4620188706 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1531151640 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1531151640 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1531151088 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1531151640 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1531151640 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1531151088 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120258 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=37
+#-----------
+time=1240053954853
+mem_heap_B=4664881090
+mem_heap_extra_B=580122622
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4664881090 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1553497880 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1553497880 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1553497328 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1553497880 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1553497880 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1553497328 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=38
+#-----------
+time=1275143776945
+mem_heap_B=4754417522
+mem_heap_extra_B=596010862
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4754417522 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1598266048 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1598266048 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1598265496 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1598266048 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1598266048 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1598265496 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n0: 120258 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=39
+#-----------
+time=1310566635939
+mem_heap_B=4845574962
+mem_heap_extra_B=612397070
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4845574962 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1643844768 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1643844768 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1643844216 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1643844768 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1643844768 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1643844216 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n0: 120258 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=40
+#-----------
+time=1346038653754
+mem_heap_B=4937383698
+mem_heap_extra_B=630293694
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4937383698 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1689749184 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1689749184 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1689748632 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1689749184 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1689749184 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1689748632 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=41
+#-----------
+time=1382487958117
+mem_heap_B=5031714930
+mem_heap_extra_B=647872814
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5031714930 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1736914752 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1736914752 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1736914200 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1736914752 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1736914752 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1736914200 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n0: 120258 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=42
+#-----------
+time=1420324599095
+mem_heap_B=5128604210
+mem_heap_extra_B=665143326
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5128604210 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1785359440 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1785359440 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1785358888 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1785359440 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1785359440 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1785358888 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n0: 120162 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=43
+#-----------
+time=1459907193316
+mem_heap_B=5228285906
+mem_heap_extra_B=681916110
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5228285906 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1835200240 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1835200240 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1835199688 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1835200240 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1835200240 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1835199688 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n0: 120258 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=44
+#-----------
+time=1499551897652
+mem_heap_B=5329510818
+mem_heap_extra_B=699486334
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5329510818 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1885812672 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1885812672 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1885812120 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n1: 1885812672 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1885812672 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1885812120 0x404E5A: main (main.cpp:91)
+   n0: 552 in 1 place, below massif's threshold (01.00%)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n0: 120306 in 77 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=45
+#-----------
+time=1544025170554
+mem_heap_B=5490240802
+mem_heap_extra_B=721441150
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5490240802 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1940545392 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1940545392 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n0: 51384850 in 103 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=46
+#-----------
+time=1573276231514
+mem_heap_B=6864529946
+mem_heap_extra_B=829597398
+mem_stacks_B=0
+heap_tree=detailed
+n7: 6864529946 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1940545392 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1940545392 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 562770784 0x4EC4423: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 562770784 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 562770784 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 562770784 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 562770784 0x404FBC: main (main.cpp:102)
+ n0: 457929862 in 100 places, all below massif's threshold (01.00%)
+ n1: 281385396 0x4EC43EF: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 281385396 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 281385396 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 281385396 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 281385396 0x404FBC: main (main.cpp:102)
+ n1: 123587952 0x424904: GRBConstr::GRBConstr(_GRBmodel*, int) (in /home/guilherme/scheduling/main)
+  n1: 123587952 0x41130A: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 123587952 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 123587952 0x404FBC: main (main.cpp:102)
+#-----------
+snapshot=47
+#-----------
+time=1604993889422
+mem_heap_B=8247374204
+mem_heap_extra_B=925843580
+mem_stacks_B=0
+heap_tree=detailed
+n14: 8247374204 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1940545392 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1940545392 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 1096764952 0x4EC4423: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 1096764952 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 1096764952 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 1096764952 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 1096764952 0x404FBC: main (main.cpp:102)
+ n1: 548382480 0x4EC43EF: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 548382480 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 548382480 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 548382480 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 548382480 0x404FBC: main (main.cpp:102)
+ n1: 247716864 0x424904: GRBConstr::GRBConstr(_GRBmodel*, int) (in /home/guilherme/scheduling/main)
+  n1: 247716864 0x41130A: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 247716864 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 247716864 0x404FBC: main (main.cpp:102)
+ n2: 145296000 0x52D61A0: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 145295784 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 145295784 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 145295784 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 145295784 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 145295784 0x404FBC: main (main.cpp:102)
+  n0: 216 in 1 place, below massif's threshold (01.00%)
+ n1: 134217728 0x422945: std::vector<GRBConstr, std::allocator<GRBConstr> >::_M_insert_aux(__gnu_cxx::__normal_iterator<GRBConstr*, std::vector<GRBConstr, std::allocator<GRBConstr> > >, GRBConstr const&) (in /home/guilherme/scheduling/main)
+  n1: 134217728 0x411363: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 134217728 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 134217728 0x404FBC: main (main.cpp:102)
+ n1: 130706416 0x4EC4483: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 130706416 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 130706416 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 130706416 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 130706416 0x404FBC: main (main.cpp:102)
+ n1: 130706408 0x4EC4508: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 130706408 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 130706408 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 130706408 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 130706408 0x404FBC: main (main.cpp:102)
+ n1: 130706408 0x4EC4534: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 130706408 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 130706408 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 130706408 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 130706408 0x404FBC: main (main.cpp:102)
+ n1: 130706408 0x4EC44DC: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 130706408 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 130706408 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 130706408 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 130706408 0x404FBC: main (main.cpp:102)
+ n2: 96864000 0x52D6177: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 96863856 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 96863856 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 96863856 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 96863856 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 96863856 0x404FBC: main (main.cpp:102)
+  n0: 144 in 1 place, below massif's threshold (01.00%)
+ n0: 16450588 in 93 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=48
+#-----------
+time=1636690182468
+mem_heap_B=9890373748
+mem_heap_extra_B=1022065804
+mem_stacks_B=0
+heap_tree=detailed
+n14: 9890373748 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1940545392 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1940545392 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1766404880 0x4EC4423: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 1766404880 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 1766404880 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 1766404880 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 1766404880 0x404FBC: main (main.cpp:102)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 883202444 0x4EC43EF: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 883202444 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 883202444 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 883202444 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 883202444 0x404FBC: main (main.cpp:102)
+ n1: 370379760 0x424904: GRBConstr::GRBConstr(_GRBmodel*, int) (in /home/guilherme/scheduling/main)
+  n1: 370379760 0x41130A: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 370379760 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 370379760 0x404FBC: main (main.cpp:102)
+ n1: 268435456 0x422945: std::vector<GRBConstr, std::allocator<GRBConstr> >::_M_insert_aux(__gnu_cxx::__normal_iterator<GRBConstr*, std::vector<GRBConstr, std::allocator<GRBConstr> > >, GRBConstr const&) (in /home/guilherme/scheduling/main)
+  n1: 268435456 0x411363: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 268435456 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 268435456 0x404FBC: main (main.cpp:102)
+ n2: 224150688 0x52D61A0: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 224150472 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 224150472 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 224150472 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 224150472 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 224150472 0x404FBC: main (main.cpp:102)
+  n0: 216 in 1 place, below massif's threshold (01.00%)
+ n1: 191369328 0x4EC4483: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 191369328 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 191369328 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 191369328 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 191369328 0x404FBC: main (main.cpp:102)
+ n1: 191369320 0x4EC4508: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 191369320 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 191369320 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 191369320 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 191369320 0x404FBC: main (main.cpp:102)
+ n1: 191369320 0x4EC4534: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 191369320 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 191369320 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 191369320 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 191369320 0x404FBC: main (main.cpp:102)
+ n1: 191369320 0x4EC44DC: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 191369320 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 191369320 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 191369320 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 191369320 0x404FBC: main (main.cpp:102)
+ n2: 149433792 0x52D6177: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 149433648 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 149433648 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 149433648 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 149433648 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 149433648 0x404FBC: main (main.cpp:102)
+  n0: 144 in 1 place, below massif's threshold (01.00%)
+ n0: 24033488 in 93 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=49
+#-----------
+time=1638085687192
+mem_heap_B=9901690032
+mem_heap_extra_B=1026343840
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=1638783439302
+mem_heap_B=9907192988
+mem_heap_extra_B=1028417956
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=1639481191968
+mem_heap_B=9912506996
+mem_heap_extra_B=1030428660
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=1639918239479
+mem_heap_B=9994915880
+mem_heap_extra_B=1031736320
+mem_stacks_B=0
+heap_tree=detailed
+n14: 9994915880 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1940545392 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1940545392 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1766404880 0x4EC4423: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 1766404880 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 1766404880 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 1766404880 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 1766404880 0x404FBC: main (main.cpp:102)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 883202444 0x4EC43EF: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 883202444 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 883202444 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 883202444 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 883202444 0x404FBC: main (main.cpp:102)
+ n1: 382738624 0x424904: GRBConstr::GRBConstr(_GRBmodel*, int) (in /home/guilherme/scheduling/main)
+  n1: 382738624 0x41130A: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 382738624 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 382738624 0x404FBC: main (main.cpp:102)
+ n1: 268435456 0x422945: std::vector<GRBConstr, std::allocator<GRBConstr> >::_M_insert_aux(__gnu_cxx::__normal_iterator<GRBConstr*, std::vector<GRBConstr, std::allocator<GRBConstr> > >, GRBConstr const&) (in /home/guilherme/scheduling/main)
+  n1: 268435456 0x411363: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 268435456 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 268435456 0x404FBC: main (main.cpp:102)
+ n2: 232095672 0x52D61A0: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 232095456 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 232095456 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 232095456 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 232095456 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 232095456 0x404FBC: main (main.cpp:102)
+  n0: 216 in 1 place, below massif's threshold (01.00%)
+ n1: 210506704 0x4EC4483: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 210506704 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 210506704 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 210506704 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 210506704 0x404FBC: main (main.cpp:102)
+ n1: 210506696 0x4EC4508: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 210506696 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 210506696 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 210506696 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 210506696 0x404FBC: main (main.cpp:102)
+ n1: 210506696 0x4EC4534: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 210506696 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 210506696 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 210506696 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 210506696 0x404FBC: main (main.cpp:102)
+ n1: 210506696 0x4EC44DC: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 210506696 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 210506696 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 210506696 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 210506696 0x404FBC: main (main.cpp:102)
+ n2: 154730448 0x52D6177: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 154730304 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 154730304 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 154730304 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 154730304 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 154730304 0x404FBC: main (main.cpp:102)
+  n0: 144 in 1 place, below massif's threshold (01.00%)
+ n0: 26425612 in 93 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=53
+#-----------
+time=1640615992361
+mem_heap_B=10000697028
+mem_heap_extra_B=1033916740
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=1641313745285
+mem_heap_B=10006770360
+mem_heap_extra_B=1036241296
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=1642011497893
+mem_heap_B=10012638663
+mem_heap_extra_B=1038483161
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=1642709250855
+mem_heap_B=10018353888
+mem_heap_extra_B=1040652144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=1643407002931
+mem_heap_B=10024077919
+mem_heap_extra_B=1042822137
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=1644104755743
+mem_heap_B=10029738175
+mem_heap_extra_B=1044963649
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=1644802507807
+mem_heap_B=10035373812
+mem_heap_extra_B=1047102420
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=1645500259865
+mem_heap_B=10040948612
+mem_heap_extra_B=1049205892
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=1646139093262
+mem_heap_B=10311146960
+mem_heap_extra_B=1051185960
+mem_stacks_B=0
+heap_tree=detailed
+n14: 10311146960 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1943054184 0x4EC4423: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 1943054184 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 1943054184 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 1943054184 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 1943054184 0x404FBC: main (main.cpp:102)
+ n1: 1940545392 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1940545392 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 971527096 0x4EC43EF: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 971527096 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 971527096 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 971527096 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 971527096 0x404FBC: main (main.cpp:102)
+ n1: 407483392 0x424904: GRBConstr::GRBConstr(_GRBmodel*, int) (in /home/guilherme/scheduling/main)
+  n1: 407483392 0x41130A: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 407483392 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 407483392 0x404FBC: main (main.cpp:102)
+ n1: 268435456 0x422945: std::vector<GRBConstr, std::allocator<GRBConstr> >::_M_insert_aux(__gnu_cxx::__normal_iterator<GRBConstr*, std::vector<GRBConstr, std::allocator<GRBConstr> > >, GRBConstr const&) (in /home/guilherme/scheduling/main)
+  n1: 268435456 0x411363: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 268435456 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 268435456 0x404FBC: main (main.cpp:102)
+ n2: 248003064 0x52D61A0: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 248002848 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 248002848 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 248002848 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 248002848 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 248002848 0x404FBC: main (main.cpp:102)
+  n0: 216 in 1 place, below massif's threshold (01.00%)
+ n1: 210506704 0x4EC4483: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 210506704 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 210506704 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 210506704 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 210506704 0x404FBC: main (main.cpp:102)
+ n1: 210506696 0x4EC4508: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 210506696 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 210506696 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 210506696 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 210506696 0x404FBC: main (main.cpp:102)
+ n1: 210506696 0x4EC4534: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 210506696 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 210506696 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 210506696 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 210506696 0x404FBC: main (main.cpp:102)
+ n1: 210506696 0x4EC44DC: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 210506696 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 210506696 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 210506696 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 210506696 0x404FBC: main (main.cpp:102)
+ n2: 165335376 0x52D6177: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 165335232 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 165335232 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 165335232 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 165335232 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 165335232 0x404FBC: main (main.cpp:102)
+  n0: 144 in 1 place, below massif's threshold (01.00%)
+ n0: 26425648 in 93 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=62
+#-----------
+time=1646836845721
+mem_heap_B=10316690035
+mem_heap_extra_B=1053276805
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=1647534598513
+mem_heap_B=10322182744
+mem_heap_extra_B=1055350960
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=1648232350531
+mem_heap_B=10327597683
+mem_heap_extra_B=1057396341
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=1648930103065
+mem_heap_B=10333003208
+mem_heap_extra_B=1059442728
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=1649627856124
+mem_heap_B=10338538028
+mem_heap_extra_B=1061551060
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=1649703945435
+mem_heap_B=10426009093
+mem_heap_extra_B=1061784499
+mem_stacks_B=0
+heap_tree=detailed
+n14: 10426009093 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1943054184 0x4EC4423: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 1943054184 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 1943054184 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 1943054184 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 1943054184 0x404FBC: main (main.cpp:102)
+ n1: 1940545392 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1940545392 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 971527096 0x4EC43EF: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 971527096 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 971527096 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 971527096 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 971527096 0x404FBC: main (main.cpp:102)
+ n1: 421013376 0x424904: GRBConstr::GRBConstr(_GRBmodel*, int) (in /home/guilherme/scheduling/main)
+  n1: 421013376 0x41130A: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 421013376 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 421013376 0x404FBC: main (main.cpp:102)
+ n1: 268435456 0x422945: std::vector<GRBConstr, std::allocator<GRBConstr> >::_M_insert_aux(__gnu_cxx::__normal_iterator<GRBConstr*, std::vector<GRBConstr, std::allocator<GRBConstr> > >, GRBConstr const&) (in /home/guilherme/scheduling/main)
+  n1: 268435456 0x411363: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 268435456 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 268435456 0x404FBC: main (main.cpp:102)
+ n2: 256700880 0x52D61A0: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 256700664 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 256700664 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 256700664 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 256700664 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 256700664 0x404FBC: main (main.cpp:102)
+  n0: 216 in 1 place, below massif's threshold (01.00%)
+ n1: 231557816 0x4EC4483: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557816 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557816 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557816 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557816 0x404FBC: main (main.cpp:102)
+ n1: 231557808 0x4EC4508: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557808 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557808 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557808 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557808 0x404FBC: main (main.cpp:102)
+ n1: 231557808 0x4EC4534: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557808 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557808 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557808 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557808 0x404FBC: main (main.cpp:102)
+ n1: 231557808 0x4EC44DC: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557808 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557808 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557808 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557808 0x404FBC: main (main.cpp:102)
+ n2: 171133920 0x52D6177: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 171133776 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 171133776 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 171133776 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 171133776 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 171133776 0x404FBC: main (main.cpp:102)
+  n0: 144 in 1 place, below massif's threshold (01.00%)
+ n0: 29056989 in 93 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=68
+#-----------
+time=1650401697484
+mem_heap_B=10431733697
+mem_heap_extra_B=1063945727
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=1651099450286
+mem_heap_B=10437367389
+mem_heap_extra_B=1066057763
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=1651797202612
+mem_heap_B=10442987057
+mem_heap_extra_B=1068179183
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=1652494955455
+mem_heap_B=10448503137
+mem_heap_extra_B=1070256695
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=1653192708758
+mem_heap_B=10453816613
+mem_heap_extra_B=1072268987
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=1653890461174
+mem_heap_B=10459358232
+mem_heap_extra_B=1074353960
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=1654588213984
+mem_heap_B=10465080080
+mem_heap_extra_B=1076527336
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=1655285966028
+mem_heap_B=10470562985
+mem_heap_extra_B=1078602407
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=1656810799399
+mem_heap_B=10698390911
+mem_heap_extra_B=1080598385
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=1658878190667
+mem_heap_B=15139159374
+mem_heap_extra_B=1080618802
+mem_stacks_B=0
+heap_tree=detailed
+n23: 15139159374 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1943054184 0x4EC4423: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 1943054184 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 1943054184 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 1943054184 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 1943054184 0x404FBC: main (main.cpp:102)
+ n1: 1940545392 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1940545392 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1940544848 0x4ED42DD: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 1940544848 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 1940544848 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 1940544848 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+     n1: 1940544848 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+      n0: 1940544848 0x40500E: main (main.cpp:103)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 971527096 0x4EC43EF: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 971527096 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 971527096 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 971527096 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 971527096 0x404FBC: main (main.cpp:102)
+ n1: 970272428 0x4ED42A7: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 970272428 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 970272428 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 970272428 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+     n1: 970272428 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+      n0: 970272428 0x40500E: main (main.cpp:103)
+ n1: 445075760 0x424904: GRBConstr::GRBConstr(_GRBmodel*, int) (in /home/guilherme/scheduling/main)
+  n1: 445075760 0x41130A: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 445075760 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 445075760 0x404FBC: main (main.cpp:102)
+ n2: 272169576 0x52D61A0: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 272169360 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 272169360 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 272169360 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 272169360 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 272169360 0x404FBC: main (main.cpp:102)
+  n0: 216 in 1 place, below massif's threshold (01.00%)
+ n1: 268435456 0x422945: std::vector<GRBConstr, std::allocator<GRBConstr> >::_M_insert_aux(__gnu_cxx::__normal_iterator<GRBConstr*, std::vector<GRBConstr, std::allocator<GRBConstr> > >, GRBConstr const&) (in /home/guilherme/scheduling/main)
+  n1: 268435456 0x411363: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 268435456 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 268435456 0x404FBC: main (main.cpp:102)
+ n1: 231557816 0x4EC4483: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557816 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557816 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557816 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557816 0x404FBC: main (main.cpp:102)
+ n1: 231557808 0x4EC4508: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557808 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557808 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557808 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557808 0x404FBC: main (main.cpp:102)
+ n1: 231557808 0x4EC4534: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557808 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557808 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557808 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557808 0x404FBC: main (main.cpp:102)
+ n1: 231557808 0x4EC44DC: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557808 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557808 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557808 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557808 0x404FBC: main (main.cpp:102)
+ n0: 223778466 in 98 places, all below massif's threshold (01.00%)
+ n1: 222538448 0x4ED72F6: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538448 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538448 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538448 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538448 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538448 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538448 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4ED7346: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538440 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4ED72AB: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538440 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4ED72CF: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538440 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4ED728A: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538440 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222537888 0x4ED52C2: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222537888 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222537888 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222537888 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+     n1: 222537888 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+      n0: 222537888 0x40500E: main (main.cpp:103)
+ n1: 222537888 0x4ED7D2D: PRIVATE000000000008aa63 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222537888 0x4ED4261: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222537888 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222537888 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222537888 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222537888 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222537888 0x40500E: main (main.cpp:103)
+ n2: 181446384 0x52D6177: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 181446240 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 181446240 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 181446240 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 181446240 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 181446240 0x404FBC: main (main.cpp:102)
+  n0: 144 in 1 place, below massif's threshold (01.00%)
+#-----------
+snapshot=78
+#-----------
+time=1661872388029
+mem_heap_B=15139159374
+mem_heap_extra_B=1080618802
+mem_stacks_B=0
+heap_tree=detailed
+n23: 15139159374 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1943054184 0x4EC4423: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 1943054184 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 1943054184 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 1943054184 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 1943054184 0x404FBC: main (main.cpp:102)
+ n1: 1940545392 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1940545392 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1940544848 0x4ED42DD: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 1940544848 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 1940544848 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 1940544848 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+     n1: 1940544848 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+      n0: 1940544848 0x40500E: main (main.cpp:103)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 971527096 0x4EC43EF: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 971527096 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 971527096 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 971527096 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 971527096 0x404FBC: main (main.cpp:102)
+ n1: 970272428 0x4ED42A7: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 970272428 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 970272428 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 970272428 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+     n1: 970272428 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+      n0: 970272428 0x40500E: main (main.cpp:103)
+ n1: 445075760 0x424904: GRBConstr::GRBConstr(_GRBmodel*, int) (in /home/guilherme/scheduling/main)
+  n1: 445075760 0x41130A: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 445075760 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 445075760 0x404FBC: main (main.cpp:102)
+ n2: 272169576 0x52D61A0: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 272169360 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 272169360 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 272169360 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 272169360 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 272169360 0x404FBC: main (main.cpp:102)
+  n0: 216 in 1 place, below massif's threshold (01.00%)
+ n1: 268435456 0x422945: std::vector<GRBConstr, std::allocator<GRBConstr> >::_M_insert_aux(__gnu_cxx::__normal_iterator<GRBConstr*, std::vector<GRBConstr, std::allocator<GRBConstr> > >, GRBConstr const&) (in /home/guilherme/scheduling/main)
+  n1: 268435456 0x411363: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 268435456 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 268435456 0x404FBC: main (main.cpp:102)
+ n1: 231557816 0x4EC4483: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557816 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557816 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557816 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557816 0x404FBC: main (main.cpp:102)
+ n1: 231557808 0x4EC4508: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557808 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557808 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557808 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557808 0x404FBC: main (main.cpp:102)
+ n1: 231557808 0x4EC4534: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557808 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557808 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557808 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557808 0x404FBC: main (main.cpp:102)
+ n1: 231557808 0x4EC44DC: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557808 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557808 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557808 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557808 0x404FBC: main (main.cpp:102)
+ n0: 223778466 in 98 places, all below massif's threshold (01.00%)
+ n1: 222538448 0x4ED72F6: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538448 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538448 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538448 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538448 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538448 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538448 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4ED7346: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538440 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4ED72AB: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538440 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4ED72CF: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538440 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4ED728A: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538440 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222537888 0x4ED52C2: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222537888 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222537888 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222537888 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+     n1: 222537888 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+      n0: 222537888 0x40500E: main (main.cpp:103)
+ n1: 222537888 0x4ED7D2D: PRIVATE000000000008aa63 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222537888 0x4ED4261: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222537888 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222537888 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222537888 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222537888 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222537888 0x40500E: main (main.cpp:103)
+ n2: 181446384 0x52D6177: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 181446240 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 181446240 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 181446240 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 181446240 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 181446240 0x404FBC: main (main.cpp:102)
+  n0: 144 in 1 place, below massif's threshold (01.00%)
+#-----------
+snapshot=79
+#-----------
+time=1662889705177
+mem_heap_B=15139158895
+mem_heap_extra_B=1080618793
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=1669463317881
+mem_heap_B=19273940659
+mem_heap_extra_B=1080628541
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=1669463317962
+mem_heap_B=19273940659
+mem_heap_extra_B=1080628541
+mem_stacks_B=0
+heap_tree=peak
+n29: 19273940659 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1943054184 0x4EC4423: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 1943054184 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 1943054184 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 1943054184 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 1943054184 0x404FBC: main (main.cpp:102)
+ n1: 1940545400 0x4EB8C44: PRIVATE000000000007d1fc (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 1940545400 0x4EB4CF9: PRIVATE000000000007e404 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 1940545400 0x526860A: PRIVATE00000000004deac2 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 1940545400 0x524F007: PRIVATE00000000004cc836 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 1940545400 0x524DCB5: GRBoptimize (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+      n1: 1940545400 0x410991: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 1940545400 0x40500E: main (main.cpp:103)
+ n1: 1940545392 0x42784E: std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266CE: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1940545392 0x422847: std::vector<GRBVar, std::allocator<GRBVar> >::operator=(std::vector<GRBVar, std::allocator<GRBVar> > const&) (in /home/guilherme/scheduling/main)
+  n2: 1940545392 0x4266DC: GRBLinExpr::operator=(GRBLinExpr const&) (in /home/guilherme/scheduling/main)
+   n0: 1940544840 0x404E5A: main (main.cpp:91)
+   n0: 552 in 2 places, all below massif's threshold (01.00%)
+ n1: 1940544848 0x4ED42DD: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 1940544848 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 1940544848 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 1940544848 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+     n1: 1940544848 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+      n0: 1940544848 0x40500E: main (main.cpp:103)
+ n0: 1557765168 0x404B52: main (main.cpp:67)
+ n1: 971527096 0x4EC43EF: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 971527096 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 971527096 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 971527096 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 971527096 0x404FBC: main (main.cpp:102)
+ n1: 970272704 0x4EB8C24: PRIVATE000000000007d1fc (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 970272704 0x4EB4CF9: PRIVATE000000000007e404 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 970272704 0x526860A: PRIVATE00000000004deac2 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 970272704 0x524F007: PRIVATE00000000004cc836 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 970272704 0x524DCB5: GRBoptimize (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+      n1: 970272704 0x410991: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 970272704 0x40500E: main (main.cpp:103)
+ n1: 970272428 0x4ED42A7: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 970272428 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 970272428 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 970272428 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+     n1: 970272428 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+      n0: 970272428 0x40500E: main (main.cpp:103)
+ n0: 516496375 in 105 places, all below massif's threshold (01.00%)
+ n1: 445075760 0x424904: GRBConstr::GRBConstr(_GRBmodel*, int) (in /home/guilherme/scheduling/main)
+  n1: 445075760 0x41130A: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 445075760 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 445075760 0x404FBC: main (main.cpp:102)
+ n2: 272169576 0x52D61A0: PRIVATE000000000055b88f (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 272169360 0x4EC5175: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 272169360 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 272169360 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+     n1: 272169360 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+      n0: 272169360 0x404FBC: main (main.cpp:102)
+  n0: 216 in 1 place, below massif's threshold (01.00%)
+ n1: 268435456 0x422945: std::vector<GRBConstr, std::allocator<GRBConstr> >::_M_insert_aux(__gnu_cxx::__normal_iterator<GRBConstr*, std::vector<GRBConstr, std::allocator<GRBConstr> > >, GRBConstr const&) (in /home/guilherme/scheduling/main)
+  n1: 268435456 0x411363: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+   n1: 268435456 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+    n0: 268435456 0x404FBC: main (main.cpp:102)
+ n1: 231557816 0x4EC4483: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557816 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557816 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557816 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557816 0x404FBC: main (main.cpp:102)
+ n1: 231557808 0x4EC4508: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557808 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557808 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557808 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557808 0x404FBC: main (main.cpp:102)
+ n1: 231557808 0x4EC44DC: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557808 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557808 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557808 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557808 0x404FBC: main (main.cpp:102)
+ n1: 231557808 0x4EC4534: PRIVATE000000000008d186 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 231557808 0x4EC5FB2: GRBaddconstrs (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 231557808 0x411015: GRBModel::addConstr(GRBLinExpr const&, char, double, double, std::string const&) (in /home/guilherme/scheduling/main)
+    n1: 231557808 0x4115F6: GRBModel::addConstr(GRBLinExpr const&, char, double, std::string) (in /home/guilherme/scheduling/main)
+     n0: 231557808 0x404FBC: main (main.cpp:102)
+ n1: 222538448 0x4EB8BC1: PRIVATE000000000007d1fc (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538448 0x4EB4CF9: PRIVATE000000000007e404 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538448 0x526860A: PRIVATE00000000004deac2 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538448 0x524F007: PRIVATE00000000004cc836 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538448 0x524DCB5: GRBoptimize (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+      n1: 222538448 0x410991: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538448 0x40500E: main (main.cpp:103)
+ n1: 222538448 0x4ED72F6: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538448 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538448 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538448 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538448 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538448 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538448 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4ED72CF: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538440 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4EB8CC7: PRIVATE000000000007d1fc (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4EB4CF9: PRIVATE000000000007e404 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x526860A: PRIVATE00000000004deac2 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x524F007: PRIVATE00000000004cc836 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x524DCB5: GRBoptimize (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+      n1: 222538440 0x410991: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4EB8CED: PRIVATE000000000007d1fc (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4EB4CF9: PRIVATE000000000007e404 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x526860A: PRIVATE00000000004deac2 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x524F007: PRIVATE00000000004cc836 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x524DCB5: GRBoptimize (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+      n1: 222538440 0x410991: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4ED7346: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538440 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4EB8B8E: PRIVATE000000000007d1fc (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4EB4CF9: PRIVATE000000000007e404 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x526860A: PRIVATE00000000004deac2 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x524F007: PRIVATE00000000004cc836 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x524DCB5: GRBoptimize (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+      n1: 222538440 0x410991: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4ED72AB: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538440 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222538440 0x4ED728A: PRIVATE000000000008a17b (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222538440 0x4ED41CA: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222538440 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222538440 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222538440 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222538440 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222538440 0x40500E: main (main.cpp:103)
+ n1: 222537888 0x4ED52C2: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222537888 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222537888 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222537888 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+     n1: 222537888 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+      n0: 222537888 0x40500E: main (main.cpp:103)
+ n1: 222537888 0x4EB8B4C: PRIVATE000000000007d1fc (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222537888 0x4EB4CF9: PRIVATE000000000007e404 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222537888 0x526860A: PRIVATE00000000004deac2 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222537888 0x524F007: PRIVATE00000000004cc836 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222537888 0x524DCB5: GRBoptimize (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+      n1: 222537888 0x410991: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222537888 0x40500E: main (main.cpp:103)
+ n1: 222537888 0x4ED7D2D: PRIVATE000000000008aa63 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+  n1: 222537888 0x4ED4261: PRIVATE00000000000970ea (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+   n1: 222537888 0x4ECD1BD: PRIVATE0000000000093477 (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+    n1: 222537888 0x4ECCFA2: GRBupdatemodel (in /opt/gurobi702/linux64/lib/libgurobi.so.7.0.2)
+     n1: 222537888 0x4100DD: GRBModel::update() (in /home/guilherme/scheduling/main)
+      n1: 222537888 0x410989: GRBModel::optimize() (in /home/guilherme/scheduling/main)
+       n0: 222537888 0x40500E: main (main.cpp:103)
+#-----------
+snapshot=82
+#-----------
+time=1670161069921
+mem_heap_B=14919735780
+mem_heap_extra_B=937531724
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=1670858821879
+mem_heap_B=9891765965
+mem_heap_extra_B=781031411
+mem_stacks_B=0
+heap_tree=empty
