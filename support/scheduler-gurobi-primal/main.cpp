@@ -109,8 +109,6 @@ int main(int argc, char** argv)
 		double y;
 		int y_abs;
 
-
-		//cout << "Dual variables:";
                 for (i = 0; i < f; i++)
                 {
                         y = variables[i].get(GRB_DoubleAttr_X);
@@ -120,9 +118,23 @@ int main(int argc, char** argv)
                         	mc = true;
                         	break;
                 	}
-			//cout << "\t" << y;
                 }
-		//cout << endl;	
+
+                cout << "Primal variables:";
+                for (i = 0; i < m; i++)
+                {
+                        y = variables[i].get(GRB_DoubleAttr_X);
+                        cout << "\t" << y;
+                }
+                cout << endl;
+
+                cout << "Dual variavles:";
+                for (i = 0; i < f; i++)
+                {
+                        y = model.getConstrByName(to_string(i)).get(GRB_DoubleAttr_Pi);
+                        cout << "\t" << y;
+                }
+                cout << endl;
 
 		// Prints the result	
 		cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t0\t" << mc << "\t" << fixed << setprecision(6) << z << endl;

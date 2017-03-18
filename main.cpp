@@ -16,19 +16,20 @@ int main(int argc, char** argv)
 {
 	// Handler for wrong arguments set
 	// Should be 3 arguments: number of nodes, area side, and experiment round number
-	if(argc!=4)
+	if(argc!=5)
 	{
 		cout << "Invalid arguments" << endl;
-		cout << "USAGE: ./scheduling <NUMBER_OF_NODES> <AREA> <ROUND_NUMBER>" << endl;
+		cout << "USAGE: ./scheduling <NUMBER_OF_NODES> <AREA> <ROUND_NUMBER> <SOLVING METHOD>" << endl;
 		return 0;
 	}
 		
 	// Reads arguments and opens the binary file containing the feasible sets
-	string n, area, run, filename;
+	string n, area, run, method, filename;
 	n = argv[1];
 	area = argv[2];
 	run = argv[3];
-
+	method = argv[4];
+		
 	filename = NETWORKS_PATH + n + "-" + area + "-" + run + ".dat";
 	ifstream infile;
 	infile.open(filename, ios::binary);
@@ -99,7 +100,7 @@ int main(int argc, char** argv)
                 for(i = 0; i < f; i++)
                         model.addConstr(constraints[i], GRB_LESS_EQUAL, 1, to_string(i).c_str());
 
-		model.set("Method", "0");
+		model.set("Method", method);
                 model.optimize();
 
 		// Gets the result
