@@ -16,18 +16,19 @@ int main(int argc, char** argv)
 {
 	// Handler for wrong arguments set
 	// Should be 3 arguments: number of nodes, area side, and experiment round number
-	if(argc!=4)
+	if(argc!=5)
 	{
 		cout << "Invalid arguments" << endl;
-		cout << "USAGE: ./scheduling <NUMBER_OF_NODES> <AREA> <ROUND_NUMBER>" << endl;
+		cout << "USAGE: ./scheduling <NUMBER_OF_NODES> <AREA> <ROUND_NUMBER> <SOLVING_METHOD>" << endl;
 		return 0;
 	}
 
 	// Reads arguments and opens the binary file containing the feasible sets
-	string n, area, run, filename;
+	string n, area, run, method, filename;
 	n = argv[1];
 	area = argv[2];
 	run = argv[3];
+	method = argv[4];
 
 	filename = NETWORKS_PATH + n + "-" + area + "-" + run + ".dat";
 	ifstream infile;
@@ -53,27 +54,43 @@ int main(int argc, char** argv)
 
 	try
         {
+		clock_t t1, t2, t3, t4, t5, t6, t7, t8;
+
+		t1 = clock();
+		cout << "Starting optimization process... ";
 		// Sets some Gurobi's variables	
                 GRBEnv env = GRBEnv();
                 GRBModel model = GRBModel(env);
                 //model.getEnv().set(GRB_IntParam_OutputFlag, 0);
 
+		t2 = clock();
+		cout << fixed << setprecision(6) << ((double)(t2 - t1))/CLOCKS_PER_SEC << endl;
+		cout << "Allocating variables and data structures... ";
 		// Instantiates the LP components
-                GRBVar* variables = new GRBVar[f];
+                //GRBVar* vars = new GRBVar[f];
                 GRBLinExpr objective = 0;
                 GRBLinExpr* constraints = new GRBLinExpr[m];
 
 		fill(constraints, constraints + m, 0);
-
 		uint64_t i, j;
 
+		t3 = clock();
+		cout << fixed << setprecision(6) << ((double)(t3 - t2))/CLOCKS_PER_SEC << endl; 
+		cout << "Defining variables and objective function... ";
 		// Initializes the objective function
+		//const double ob = 1.0;
+		//GRBVar* vars = model.addVars(NULL, NULL, &ob, NULL, NULL, f);
+		GRBVar* vars = model.addVars(f, GRB_CONTINUOUS);
 		for(i = 0; i < f; i++)
                 {
-                        variables[i] = model.addVar(0.0, GRB_INFINITY, 1.0, GRB_CONTINUOUS, to_string(i).c_str());
-                        objective = objective + variables[i];
+			//cout << "w" << endl;
+                        //vars[i] = model.addVar(0.0, GRB_INFINITY, 1.0, GRB_CONTINUOUS);
+                        objective = objective + vars[i];
                 }
 
+		t4 = clock();
+		cout << fixed << setprecision(6) << ((double)(t4 - t3))/CLOCKS_PER_SEC << endl;
+		cout << "Defining constraints... ";
 		// Initializes the constraints based on the feasible sets found
 		uint128_t p, q;
                 int r;
@@ -85,33 +102,40 @@ int main(int argc, char** argv)
                                 q = p / 2;
                                 r = p % 2;
                                 if (r == 1)
-                                        constraints[i] = constraints[i] + variables[j];
+                                        constraints[i] = constraints[i] + vars[j];
                                 p = q;
                                 i++;
                         } while(q > 0);
                 }
 
 		infile.close();
-		
+
+		t5 = clock();
+		cout << fixed << setprecision(6) << ((double)(t5 - t4))/CLOCKS_PER_SEC << endl;
+		cout << "Deploy LP...";
 		// Sets the optimization direction, establishes boundaries to the constraints, and solve it
 		model.setObjective(objective, GRB_MINIMIZE);
                 for(i = 0; i < m; i++)
                         model.addConstr(constraints[i], GRB_EQUAL, 1, to_string(i).c_str());
 
-		model.set("Method", "0");
+		t6 = clock();
+		cout << fixed << setprecision(6) << ((double)(t6 - t5))/CLOCKS_PER_SEC << endl << "Solve the LP using method " << method << "..." << endl;
+		model.set("Method", method);
                 model.optimize();
-
+		t7 = clock();
+		cout << "Solving time: " << fixed << setprecision(6) << ((double)(t7 - t6))/CLOCKS_PER_SEC << endl; 
+		
 		// Gets the result
                 double z = model.get(GRB_DoubleAttr_ObjVal);
 
 		// Calculates the multicoloring feasibilty based on the variables values
-		bool mc = false;
+		bool mc= false;
 		double y;
 		int y_abs;
 
                 for (i = 0; i < f; i++)
                 {
-                        y = variables[i].get(GRB_DoubleAttr_X);
+                        y = vars[i].get(GRB_DoubleAttr_X);
 			y_abs = abs(y);
 			if((double)y_abs != y)
                 	{
@@ -121,24 +145,17 @@ int main(int argc, char** argv)
                 }
 
                 cout << "Primal variables:";
-                for (i = 0; i < m; i++)
-                {
-                        y = variables[i].get(GRB_DoubleAttr_X);
-                        cout << "\t" << y;
-                }
-                cout << endl;
-
-                cout << "Dual variavles:";
                 for (i = 0; i < f; i++)
                 {
-                        y = model.getConstrByName(to_string(i)).get(GRB_DoubleAttr_Pi);
+                        y = vars[i].get(GRB_DoubleAttr_X);
                         cout << "\t" << y;
                 }
                 cout << endl;
 
+		t8 = clock();
 		// Prints the result	
-		cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t0\t" << mc << "\t" << fixed << setprecision(6) << z << endl;
-
+		cout << n << "\t" << area << "\t" << run << "\t" << m << "\t" << f << "\t0\t" << mc << "\t" << fixed << setprecision(6) << z << "\t" << ((double)(t8 - t1))/CLOCKS_PER_SEC << endl;
+		delete[] vars;
         }
 	catch(GRBException e)
         {
@@ -150,6 +167,5 @@ int main(int argc, char** argv)
         	cout << "Exception during optimization" << endl;
                 return 0;
         }
-	
 	return 0;
 }

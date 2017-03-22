@@ -68,7 +68,8 @@ int main(int argc, char** argv)
 		fill(constraints, constraints + f, 0);
 		
 		uint64_t i, j;
-		
+	
+		model.addVars(m, -GRB_INFINITY, GRB_INFINITY, 1.0, GRB_CONTINUOUS);	
 		// Initializes the objective function
 		for(i = 0; i < m; i++)
                 {
