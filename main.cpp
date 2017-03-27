@@ -61,15 +61,16 @@ int main(int argc, char** argv)
                 //model.getEnv().set(GRB_IntParam_OutputFlag, 0);
 
 		// Instantiates the LP components
-                GRBVar variables[m];
+                //GRBVar variables[m];
                 GRBLinExpr objective = 0;
                 GRBLinExpr* constraints = new GRBLinExpr[f];
 
 		fill(constraints, constraints + f, 0);
 		
 		uint64_t i, j;
-	
-		model.addVars(m, -GRB_INFINITY, GRB_INFINITY, 1.0, GRB_CONTINUOUS);	
+
+                GRBVar* variables = model.addVars(m, GRB_CONTINUOUS);	
+		//model.addVars(m, -GRB_INFINITY, GRB_INFINITY, 1.0, GRB_CONTINUOUS);	
 		// Initializes the objective function
 		for(i = 0; i < m; i++)
                 {
